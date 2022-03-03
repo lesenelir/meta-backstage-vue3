@@ -8,7 +8,7 @@ const request = class {
   }
 
   // post 请求
-  static modepost () {
+  modepost () {
     return new Promise((resolve, reject) => {
       instance.post((this.url), this.arg).then(res => {
         resolve(res)
@@ -19,7 +19,7 @@ const request = class {
   }
 
   // get 请求
-  static modeget () {
+  modeget () {
     return new Promise((resolve, reject) => {
       instance.get((this.url)).then(res => {
         resolve(res)
